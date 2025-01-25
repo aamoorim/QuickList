@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img">
+        <img class="image" src="assets/logo.svg">
+    </div>
+        <div id="app">
+            <div id="container">
+                <div class="link">
+                    <span class="link-text">
+                        <- Voltar
+                    </span>
+                </div>
+                <h1>Compras da semana</h1>
+                <form method="post" class="form-new-item">
+                    <label class="main-input" for="main-input">
+                        <input class="input-field" type="text" id="main-input" name="new-item" required placeholder="Adicione um novo item.">
+                        <button type="submit" id="submit-btn">
+                            <span>
+                                Adicionar item
+                            </span>
+                        </button>
+                    </label>
+                    <ul>
+                        
+                    </ul>
+                </form>
+                <div class="notification hide">
+                    <span class="warn-span">
+                        <p class="warn-text">O item foi removido da lista</p>
+                    </span>
+                    <button class="close-btn" type="button">
+                        <span>
+                            <img src="assets/delete-small.png">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
